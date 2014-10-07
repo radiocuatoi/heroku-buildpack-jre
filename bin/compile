@@ -2,7 +2,10 @@
 
 echo "----> Welcome to JRE build pack"
 echo "Extracting jre..."
-tar -xf */bin/jre.tar $HOME/jre
-rm */bin/jre.tar
+BUILD_DIR=$1
+ls -a
+
+#Setting profile
+PROFILE_PATH="$BUILD_DIR/.profile.d/java.sh"
+mkdir -p $(dirname $PROFILE_PATH)
 echo 'export PATH="$PATH:$HOME/jre/bin"' >> $PROFILE_PATH
-echo "Done"
