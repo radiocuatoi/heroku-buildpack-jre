@@ -5,7 +5,3 @@ echo "Extracting jre..."
 BUILD_DIR=$1
 tar -xf bin/jre.tar -C $BUILD_DIR
 echo "Finished extracting JRE"
-#Setting profile
-PROFILE_PATH="$BUILD_DIR/.profile.d/java.sh"
-mkdir -p $(dirname $PROFILE_PATH)
-echo 'export PATH="$PATH:$HOME/jre/bin"' >> $PROFILE_PATH
