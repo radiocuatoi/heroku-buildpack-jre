@@ -4,7 +4,6 @@ echo "----> Welcome to JRE build pack"
 echo "Extracting jre..."
 BUILD_DIR=$1
 tar -xf bin/jre.tar -C $BUILD_DIR
-ls $BUILD_DIR/jre
 echo "Finished extracting JRE"
 #Setting profile
 PROFILE_PATH="$BUILD_DIR/.profile.d/java.sh"
