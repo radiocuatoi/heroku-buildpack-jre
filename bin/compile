@@ -2,7 +2,7 @@
 
 echo "----> Welcome to JRE build pack"
 echo "Extracting jre..."
-tar -xf heroku-buildpack-jre/bin/jre.tar $HOME/jre
-rm heroku-buildpack-jre/bin/jre.tar
+tar -xf */bin/jre.tar $HOME/jre
+rm */bin/jre.tar
 echo 'export PATH="$PATH:$HOME/jre/bin"' >> $PROFILE_PATH
 echo "Done"
