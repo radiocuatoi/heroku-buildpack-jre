@@ -3,7 +3,7 @@
 echo "----> Welcome to JRE build pack"
 echo "Extracting jre..."
 BUILD_DIR=$1
-ls -a
+ls bin
 
 #Setting profile
 PROFILE_PATH="$BUILD_DIR/.profile.d/java.sh"
